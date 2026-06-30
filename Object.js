@@ -31,8 +31,18 @@ tinderUser.id = "1";
 tinderUser.email = "someone@gmail.com";
 tinderUser.isLoggedIn = true;
 
-console.log(tinderUser);
+//console.log(tinderUser);
 //console.log(Object.keys(tinderUser));
 //console.log(Object.values(tinderUser));
-console.log(tinderUser.hasOwnProperty("isLoggedIn"));
-console.log(tinderUser.hasOwnProperty("isLogged"));
+// console.log(tinderUser.hasOwnProperty("isLoggedIn"));
+// console.log(tinderUser.hasOwnProperty("isLogged"));
+//-------------------------------------------------------
+//destructuring of objects
+const course = {
+  courseName: "JS",
+  fees: "1000",
+  courseInstructor: "Mayuri",
+};
+const { fees: fee } = course;
+//console.log(fees);
+console.log(fee); //both gives same results
